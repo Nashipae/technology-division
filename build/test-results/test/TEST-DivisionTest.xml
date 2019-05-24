@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="DivisionTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-05-24T12:03:01" hostname="LTTECH281" time="0.005">
-  <properties/>
-  <testcase name="getCreated_isFalseAfterInstantiation_false" classname="DivisionTest" time="0.005"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

@@ -8,7 +8,17 @@ import spark.template.handlebars.HandlebarsTemplateEngine;
 public class App{
     public static void main(String[] args) {
         staticFileLocation("/public");
-        port(4569);
+        ProcessBuilder process = new ProcessBuilder();
+        Integer port;
+
+        // This tells our app that if Heroku sets a port for us, we need to use that port.
+        // Otherwise, if they do not, continue using port 4567.
+
+        if (process.environment().get("PORT") != null) {
+            port = Integer.parseInt(process.environment().get("PORT"));
+        } else {
+            port = 4567;
+        }
 
         get("/", (request, response) -> {
             return new ModelAndView(new HashMap(), "/index.hbs");
@@ -33,7 +43,6 @@ public class App{
             String responsibilities = request.queryParams("responsibilities");
             Division division = new Division(department, section, id, name, role, responsibilities);
             model.put("division", division);
-
             return new ModelAndView(model, "success.hbs");
         }, new HandlebarsTemplateEngine());
 
