@@ -8,7 +8,7 @@ import spark.template.handlebars.HandlebarsTemplateEngine;
 public class App{
     public static void main(String[] args) {
         staticFileLocation("/public");
-        port(4568);
+        port(4569);
 
         get("/", (request, response) -> {
             return new ModelAndView(new HashMap(), "/index.hbs");
@@ -25,8 +25,15 @@ public class App{
 
         post("/posts/new", (request, response) -> { //URL to make new post on POST route
             Map<String, Object> model = new HashMap<String, Object>();
+            int id = Integer.parseInt(request.queryParams("id"));
+            String name = request.queryParams("staff_name");
             String department = request.queryParams("department");
-            Division division = new Division("department", "section", 0, "staff", "role", "responsibilities");
+            String section = request.queryParams("section");
+            String role = request.queryParams("role");
+            String responsibilities = request.queryParams("responsibilities");
+            Division division = new Division(department, section, id, name, role, responsibilities);
+            model.put("division", division);
+
             return new ModelAndView(model, "success.hbs");
         }, new HandlebarsTemplateEngine());
 
