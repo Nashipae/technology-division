@@ -1,3 +1,8 @@
+{{#partial "title" }}
+    Staff update form!
+{{/partial}}
+
+<!--form.hbs.-->
 {{#partial "content"}}
 
     <div class="container">
@@ -12,45 +17,41 @@
         </div>
     </div>
     <hr>
-    <div class="container">
+    <h1>Staff Update Form</h1>
     <h2>Fill in the below details to update a member's information.</h2>
-    <p>Add a new Member:</p>
-
-
-    <form action="/posts/new" method="POST">
+    <form action='/greeting_card'>
 
         <div class="form-group">
-            <label for="id">Staff ID &nbsp&nbsp&nbsp&nbsp</label>
+            <label for="id">Staff ID</label>
             <input id="id" name="sender" class="form-control" type="text">
         </div>
-        <br>
         <div class="form-group">
-            <label for="staff">Name&nbsp&nbsp&nbsp&nbsp</label>
+            <label for="staff">Name</label>
             <input id="staff_name" name="sender" class="form-control" type="text">
         </div>
         <div class="form-group">
-            <label for="division">Division&nbsp&nbsp&nbsp&nbsp</label>
+            <label for="division">Division</label>
             <input id="division" name="sender" class="form-control" type="radio">
         </div>
         <div class="form-group">
-            <label for="department">Department&nbsp&nbsp&nbsp&nbsp</label>
+            <label for="department">Department</label>
             <input id="department" name="recipient" class="form-control" type="checkbox">
         </div>
         <div class="form-group">
-            <label for="section">Section&nbsp&nbsp&nbsp&nbsp</label>
+            <label for="section">Section</label>
             <input id="section" name="sender" class="form-control" type="text">
         </div>
         <div class="form-group">
-            <label for="role">Role&nbsp&nbsp&nbsp&nbsp</label>
+            <label for="role">Role</label>
             <input id="role" name="sender" class="form-control" type="text">
         </div>
         <div class="form-group">
-            <label for="responsibilities">Responsibilities&nbsp</label>
+            <label for="responsibilities">Responsibilities</label>
             <input id="responsibilities" name="sender" class="form-control" type="textarea">
         </div>
         <button type="submit" class="btn">Update!</button>
     </form>
-    </div>
+    <!--form.hbs.-->
 {{/partial}}
 
 {{> layout.hbs}}
