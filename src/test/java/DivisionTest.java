@@ -21,6 +21,12 @@ public class DivisionTest {
     }
 
     @Test
+    public void getCreated_isFalseAfterInstantiation_false() throws Exception {
+        Division myDivision = new Division("RNIO", "Power",1800,"James K.","Support Engineer","Checks on power maintenance works.");
+        assertEquals(false, myDivision.getCreated()); //should never start as created
+    }
+
+    @Test
     public void getDepartment() {
     }
 
