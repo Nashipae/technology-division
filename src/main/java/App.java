@@ -18,21 +18,21 @@ public class App{
 //            return new ModelAndView(new HashMap(), "favorite_photos.hbs");
 //        }, new HandlebarsTemplateEngine());
 //
-        get("/form", (request, response) -> {
-            Map<String, Object> model = new HashMap<String, Object>();
-            return new ModelAndView(model, "form.hbs");
-        }, new HandlebarsTemplateEngine());
+//        get("/form", (request, response) -> {
+//            Map<String, Object> model = new HashMap<String, Object>();
+//            return new ModelAndView(model, "form.hbs");
+//        }, new HandlebarsTemplateEngine());
 
         post("/posts/new", (request, response) -> { //URL to make new post on POST route
             Map<String, Object> model = new HashMap<String, Object>();
-            String content = request.queryParams("content");
+            String department = request.queryParams("department");
             Division division = new Division("department", "section", 0, "staff", "role", "responsibilities");
             return new ModelAndView(model, "success.hbs");
         }, new HandlebarsTemplateEngine());
 
-        get("/form", (request, response) -> {
-            return new ModelAndView(new HashMap(), "success.hbs");
-        }, new HandlebarsTemplateEngine());
+//        get("/form", (request, response) -> {
+//            return new ModelAndView(new HashMap(), "success.hbs");
+//        }, new HandlebarsTemplateEngine());
     }
 
 

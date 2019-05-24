@@ -1,8 +1,3 @@
-{{#partial "title" }}
-    Staff update form!
-{{/partial}}
-
-<!--form.hbs.-->
 {{#partial "content"}}
 
     <div class="container">
@@ -17,41 +12,45 @@
         </div>
     </div>
     <hr>
-    <h1>Staff Update Form</h1>
-    <h2>Fill in the below details to update a member's information.</h2>
-    <form action='/greeting_card'>
+    <div class="container">
+        <h2>Fill in the below details to update a member's information.</h2>
+        <p>Add a new Member:</p>
 
-        <div class="form-group">
-            <label for="id">Staff ID</label>
-            <input id="id" name="sender" class="form-control" type="text">
-        </div>
-        <div class="form-group">
-            <label for="staff">Name</label>
-            <input id="staff_name" name="sender" class="form-control" type="text">
-        </div>
-        <div class="form-group">
-            <label for="division">Division</label>
-            <input id="division" name="sender" class="form-control" type="radio">
-        </div>
-        <div class="form-group">
-            <label for="department">Department</label>
-            <input id="department" name="recipient" class="form-control" type="checkbox">
-        </div>
-        <div class="form-group">
-            <label for="section">Section</label>
-            <input id="section" name="sender" class="form-control" type="text">
-        </div>
-        <div class="form-group">
-            <label for="role">Role</label>
-            <input id="role" name="sender" class="form-control" type="text">
-        </div>
-        <div class="form-group">
-            <label for="responsibilities">Responsibilities</label>
-            <input id="responsibilities" name="sender" class="form-control" type="textarea">
-        </div>
-        <button type="submit" class="btn">Update!</button>
-    </form>
-    <!--form.hbs.-->
+
+        <form action="/posts/new" method="POST">
+
+            <div class="form-group">
+                <label for="id">Staff ID &nbsp&nbsp&nbsp&nbsp</label>
+                <input id="id" name="id" class="form-control" type="text">
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="staff">Name&nbsp&nbsp&nbsp&nbsp</label>
+                <input id="staff_name" name="staff_name" class="form-control" type="text">
+            </div>
+            <div class="form-group">
+                <label for="division">Division&nbsp&nbsp&nbsp&nbsp</label>
+                <input id="division" name="division" class="form-control" type="radio">
+            </div>
+            <div class="form-group">
+                <label for="department">Department&nbsp&nbsp&nbsp&nbsp</label>
+                <input id="department" name="department" class="form-control" type="checkbox">
+            </div>
+            <div class="form-group">
+                <label for="section">Section&nbsp&nbsp&nbsp&nbsp</label>
+                <input id="section" name="section" class="form-control" type="text">
+            </div>
+            <div class="form-group">
+                <label for="role">Role&nbsp&nbsp&nbsp&nbsp</label>
+                <input id="role" name="role" class="form-control" type="text">
+            </div>
+            <div class="form-group">
+                <label for="responsibilities">Responsibilities&nbsp</label>
+                <input id="responsibilities" name="responsibilities" class="form-control" type="textarea">
+            </div>
+            <button type="submit" class="btn">Update!</button>
+        </form>
+    </div>
 {{/partial}}
 
 {{> layout.hbs}}

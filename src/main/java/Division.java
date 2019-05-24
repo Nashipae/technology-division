@@ -7,8 +7,8 @@ public class Division {
     private String staff;
     private String role;
     private String responsibilities;
-//    private static ArrayList<Division>  = new ArrayList<>();
-//    private Boolean shape;
+    private static ArrayList<Division>  instances = new ArrayList<>();
+    private Boolean created;
 
     public Division(String department, String section, int id, String staff, String role, String responsibilities) {
         this.department = department;
@@ -17,7 +17,8 @@ public class Division {
         this.staff = staff;
         this.role = role;
         this. responsibilities = responsibilities;
-//        this.mInstances.add(this);
+        this.created = false;
+        instances.add(this);
     }
 
     public String getDepartment() {
@@ -39,10 +40,16 @@ public class Division {
         return responsibilities;
     }
 
-//    public static ArrayList<Rectangle> getAll() {
-//        return mInstances;
-//    }
-//
+    public static ArrayList<Division> getAll() {
+        return instances;
+    }
+    public static void clearAllDivisions(){
+        instances.clear(); //clear as a method is part of the ArrayList class.
+    }
+    public boolean getCreated(){
+        return this.created;
+    }
+
 //    public boolean getShape() {
 //        return shape;
 //    }
