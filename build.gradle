@@ -23,4 +23,4 @@ dependencies {
     compile 'org.slf4j:slf4j-simple:1.7.21' //to ensure easy to read logging.
 }
 
-task stage(dependsOn: ['clean', 'installDist'])
+//task stage(dependsOn: ['clean', 'installDist'])
