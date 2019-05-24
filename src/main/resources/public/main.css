@@ -1,0 +1,12 @@
+#updated_details{
+    padding: 20px;
+    margin: 5px;
+}
+
+#music{
+    align-items: flex-start;
+}
+.top{
+    align-content: center;
+    background-image: url("/images/green-with-bubbles-bg.jpg");
+}
