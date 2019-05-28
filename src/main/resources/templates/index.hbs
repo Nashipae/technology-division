@@ -1,52 +1,18 @@
 {{#partial "content"}}
 
-    <div class="container">
-        <div class="row top">
-            <div class="column col-md-9">
-                <h1 align="center">Staff Information Update Form</h1>
-            </div>
-            <div class="column col-md-2">
-                <iframe width="100" height="100" src="https://www.youtube.com/embed/1ykIPO5g7MM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
+    <h1>Department List!</h1>
+    <p>Here's a list of all the division's departments. To add to the list, please use the link provided for adding a new department.</p>
 
-        </div>
-    </div>
-    <hr>
-    <div class="container">
-    <h2>Fill in the below details to update a member's information.</h2>
-    <p>Add a new Member:</p>
+    <h3>Details</h3>
 
-
-    <form action="/posts/new" method="POST">
-
-        <div class="form-group">
-            <label for="id">Staff ID &nbsp&nbsp&nbsp&nbsp</label>
-            <input id="id" name="id" class="form-control" type="text">
-        </div>
-        <br>
-        <div class="form-group">
-            <label for="staff">Name&nbsp&nbsp&nbsp&nbsp</label>
-            <input id="staff_name" name="staff_name" class="form-control" type="text">
-        </div>
-        <div class="form-group">
-            <label for="department">Department&nbsp&nbsp&nbsp&nbsp</label>
-            <input id="department" name="department" class="form-control" type="text">
-        </div>
-        <div class="form-group">
-            <label for="section">Section&nbsp&nbsp&nbsp&nbsp</label>
-            <input id="section" name="section" class="form-control" type="text">
-        </div>
-        <div class="form-group">
-            <label for="role">Role&nbsp&nbsp&nbsp&nbsp</label>
-            <input id="role" name="role" class="form-control" type="text">
-        </div>
-        <div class="form-group">
-            <label for="responsibilities">Responsibilities&nbsp</label>
-            <input id="responsibilities" name="responsibilities" class="form-control" type="textarea">
-        </div>
-        <button type="submit" class="btn btn-success">Update!</button>
-    </form>
-    </div>
+    {{#if division}}
+        {{#each division }}
+            <p>Current department:</p>
+            <p>{{division.department}} <a href="/posts/{{id}}">read more...</a></p>
+        {{/each}}
+    {{else}}
+        <p>No departments added yet!</p>
+    {{/if}}
 {{/partial}}
 
 {{> layout.hbs}}

@@ -1,0 +1,36 @@
+{{#partial "content"}}
+
+    <link href="/public/main.css" rel="stylesheet">
+    <div class="container container-fluid">
+        <div class="row top">
+            <div class="column col-lg-9" id="banner">
+                <h1 align="center">Safaricom Technology Division</h1>
+            </div>
+            <div class="column col-lg-2" id="music">
+                <iframe width="150" height="150" src="https://www.youtube.com/embed/1ykIPO5g7MM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p><em>For that cool music.</em></p>
+            </div>
+
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <h1>Success!</h1>
+
+        The staff member with the below details has been added.
+
+        <div id="updated_details">
+            <p>Employee number: {{ division.id }},</p>
+            <p>Name: {{ division.staff }},</p>
+            <p>Department: {{ division.department }},</p>
+            <p>Section: {{ division.section }},</p>
+            <p>Role: {{ division.role }},</p>
+            <p>Responsibilities: {{ division.responsibilities }},</p>
+        </div>
+
+        <a href="/"><button type="submit" class="btn btn-success">Go Back!</button></a>
+    </div>
+    <hr>
+{{/partial}}
+
+{{> layout.hbs}}

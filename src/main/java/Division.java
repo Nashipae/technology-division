@@ -1,3 +1,5 @@
+//import com.sun.org.apache.xpath.internal.operations.Div;
+
 import java.util.ArrayList;
 
 public class Division {
@@ -10,15 +12,16 @@ public class Division {
     private static ArrayList<Division>  instances = new ArrayList<>();
     private Boolean created;
 
-    public Division(String department, String section, int id, String staff, String role, String responsibilities) {
+    public Division(String department, String section, String staff, String role, String responsibilities) {
         this.department = department;
         this.section = section;
-        this.id = id;
+//        this.id = id;
         this.staff = staff;
         this.role = role;
         this. responsibilities = responsibilities;
         this.created = false;
         instances.add(this);
+        this.id = instances.size();
     }
 
     public String getDepartment() {
@@ -48,6 +51,21 @@ public class Division {
     }
     public boolean getCreated(){
         return this.created;
+    }
+    public static Division findById(int id){
+        return instances.get(id-1);
+    }
+    public void update(String department, String section, int id, String staff, String role, String responsibilities) {
+        this.department = department;
+        this.section = section;
+//        this.id = id;
+        this.staff = staff;
+        this.role = role;
+        this. responsibilities = responsibilities;
+    }
+
+    public void deleteDivision() {
+        instances.remove(id - 1); //same reason
     }
 
 //    public boolean getShape() {
