@@ -9,6 +9,8 @@
         {{#each division }}
             <p>Current department:</p>
             <p>{{division.department}} <a href="/posts/{{id}}">read more...</a></p>
+            <a href="/posts/{{id}}/update">Edit this Department</a><br>
+            <a href="/posts/{{id}}/delete">DELETE this Department (no undo)</a>
         {{/each}}
     {{else}}
         <p>No departments added yet!</p>
