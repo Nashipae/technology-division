@@ -97,13 +97,13 @@ public class App{
             return new ModelAndView(model, "editdepartment-form.hbs");
         }, new HandlebarsTemplateEngine());
 //
-//        get("/posts/:id/delete", (req, res) -> {
-//            Map<String, Object> model = new HashMap<>();
-//            int idOfDivisionToDelete = Integer.parseInt(req.params("id")); //pull id - must match route segment
-//            Division deleteDivision = Division.findById(idOfDivisionToDelete); //use it to find post
-//            deleteDivision.deleteDivision();
-//            return new ModelAndView(model, "success.hbs");
-//        }, new HandlebarsTemplateEngine());
+        get("/posts/:id/delete", (req, res) -> {
+            Map<String, Object> model = new HashMap<>();
+            int idOfDivisionToDelete = Integer.parseInt(req.params("id")); //pull id - must match route segment
+            Division deleteDivision = Division.findById(idOfDivisionToDelete); //use it to find post
+            deleteDivision.deleteDivision();
+            return new ModelAndView(model, "success.hbs");
+        }, new HandlebarsTemplateEngine());
 
 
         //get: show new department form

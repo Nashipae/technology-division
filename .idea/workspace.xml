@@ -2,25 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8923d411-dca7-470c-9485-f5c20120e322" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/department-delete.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileContent/fileContent.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/App.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/form.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/templates/form.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/layout.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/templates/layout.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/success.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/templates/success.hbs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/form.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/form.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/layout.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/layout.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/newdepartment-form.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/newdepartment-form.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/success.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/success.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/department-detail.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/department-detail.hbs" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -89,8 +72,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/App.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="72" lean-forward="true" selection-start-line="72" selection-end-line="72" />
+            <state relative-caret-position="229">
+              <caret line="106" lean-forward="true" selection-start-line="106" selection-end-line="106" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1515#1531#0" expanded="true" />
@@ -129,8 +112,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.hbs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="8" lean-forward="true" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+            <state relative-caret-position="136">
+              <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -168,8 +151,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/department-detail.hbs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" selection-start-line="2" selection-end-line="2" />
+            <state relative-caret-position="119">
+              <caret line="7" column="69" selection-start-line="7" selection-start-column="69" selection-end-line="7" selection-end-column="69" />
             </state>
           </provider>
         </entry>
@@ -217,7 +200,6 @@
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/main/java/Division.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/editform.hbs" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/department-detail.hbs" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/index.hbs" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/staff-detail.hbs" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/staff-success.hbs" />
@@ -226,6 +208,7 @@
         <option value="$PROJECT_DIR$/src/main/resources/templates/layout.hbs" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/success.hbs" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/department-delete.hbs" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/department-detail.hbs" />
         <option value="$PROJECT_DIR$/src/main/java/App.java" />
       </list>
     </option>
@@ -457,7 +440,7 @@
       <workItem from="1559024321503" duration="24812000" />
       <workItem from="1559110561524" duration="3232000" />
       <workItem from="1559113907580" duration="572000" />
-      <workItem from="1559114518643" duration="16274000" />
+      <workItem from="1559114518643" duration="17319000" />
     </task>
     <servers />
   </component>
@@ -494,7 +477,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="119000000" />
+    <option name="totallyTimeSpent" value="120045000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="3" y="0" width="1346" height="724" extended-state="0" />
@@ -505,9 +488,9 @@
       <window_info id="UI Designer" order="2" />
       <window_info id="Favorites" order="3" sideWeight="0.5018587" side_tool="true" weight="0.08472012" />
       <window_info id="Designer" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" sideWeight="0.49814126" visible="true" weight="0.20451011" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" sideWeight="0.49814126" visible="true" weight="0.20451011" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="0" sideWeight="0.49924356" visible="true" weight="0.30574325" />
+      <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.49924356" visible="true" weight="0.30574325" />
       <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.24130106" side_tool="true" weight="0.3256579" />
       <window_info anchor="bottom" id="Database Changes" order="3" />
@@ -679,13 +662,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="8" lean-forward="true" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/form.hbs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="472">
@@ -717,13 +693,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/department-detail.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/success.hbs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -738,10 +707,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/department-detail.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="69" selection-start-line="7" selection-start-column="69" selection-end-line="7" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/App.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="72" lean-forward="true" selection-start-line="72" selection-end-line="72" />
+        <state relative-caret-position="229">
+          <caret line="106" lean-forward="true" selection-start-line="106" selection-end-line="106" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1515#1531#0" expanded="true" />
