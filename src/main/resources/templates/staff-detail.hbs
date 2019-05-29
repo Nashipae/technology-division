@@ -13,11 +13,6 @@
             <p>Section: {{ section }}</p>
             <p>Role: {{ role }}</p>
             <p>Responsibilities: {{ responsibilities }}</p>
-
-            
-            <p>{{staff_name}} <a href="/posts/{{id}}">read more...</a></p>
-            <a href="/posts/{{id}}/update">Edit staff detail</a><br>
-            <a href="/posts/{{id}}/delete">DELETE staff (no undo)</a>
         {{/each}}
     {{else}}
         <p>No staff added yet!</p>

@@ -79,13 +79,13 @@ public class App{
             return new ModelAndView(model, "department-detail.hbs"); //individual department page.
         }, new HandlebarsTemplateEngine());
 
-        //get: show all departments
-        get("/posts", (request, response) -> {
-            Map<String, Object> model = new HashMap<String, Object>();
-            ArrayList<Division> divisions = Division.getAll();
-            model.put("divisions", divisions);
-            return new ModelAndView(new HashMap(), "department-detail.hbs");
-        }, new HandlebarsTemplateEngine());
+//        //get: show all departments
+//        get("/posts", (request, response) -> {
+//            Map<String, Object> model = new HashMap<String, Object>();
+//            ArrayList<Division> divisions = Division.getAll();
+//            model.put("divisions", divisions);
+//            return new ModelAndView(new HashMap(), "department-detail.hbs");
+//        }, new HandlebarsTemplateEngine());
 
 
         //get: show a form to update a post
@@ -109,9 +109,7 @@ public class App{
         //get: show new department form
         get("/posts/new/staff", (request, response) -> {
             Map<String, Object> model = new HashMap<>();
-            ArrayList<Division> divisions = Division.getAll();
-            model.put("divisions", divisions);
-            return new ModelAndView(new HashMap(), "form.hbs");
+            return new ModelAndView(model, "form.hbs");
         }, new HandlebarsTemplateEngine());
 
 //        post: process new staff form
@@ -125,19 +123,12 @@ public class App{
             String responsibilities = request.queryParams("responsibilities");
             System.out.println(department);
             Division division = new Division(department,section, name, role, responsibilities);
-//            response.redirect("staff-success.hbs");
+//            response.redirect("staff-detail.hbs");
 //            return null;
-//            model.put("division", division);
-            return new ModelAndView(model, "staff-detail.hbs");
+            model.put("division", division);
+            return new ModelAndView(model, "staff-success.hbs");
         }, new HandlebarsTemplateEngine());
 
-//        get: show all staff
-//        get("/posts/all-staff", (request, response) -> {
-//            Map<String, Object> model = new HashMap<String, Object>();
-//            ArrayList<Division> divisions = Division.getAll();
-////            model.put("divisions", divisions);
-//            return new ModelAndView(new HashMap(), "staff-detail.hbs");
-//        }, new HandlebarsTemplateEngine());
 
     }
 
