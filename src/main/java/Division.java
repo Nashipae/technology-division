@@ -51,9 +51,9 @@ public class Division {
 //    public boolean getCreated(){
 //        return this.created;
 //    }
-//    public static Division findById(int id){
-//        return instances.get(id-1);
-//    }
+    public static Division findById(int id){
+        return instances.get(id-1);
+    }
 //    public void update(String department, String section, int id, String staff, String role, String responsibilities) {
 //        this.department = department;
 //        this.section = section;

@@ -88,14 +88,14 @@ public class App{
         }, new HandlebarsTemplateEngine());
 
 
-//        //get: show a form to update a post
-//        get("/posts/:id/update", (req, res) -> {
-//            Map<String, Object> model = new HashMap<>();
-//            int idOfDivisionToEdit = Integer.parseInt(req.params("id"));
-//            Division editDivision = Division.findById(idOfDivisionToEdit);
-//            model.put("editDivision", editDivision);
-//            return new ModelAndView(model, "newdepartment-form.hbs");
-//        }, new HandlebarsTemplateEngine());
+        //get: show a form to update a post
+        get("/posts/:id/update", (req, res) -> {
+            Map<String, Object> model = new HashMap<>();
+            int idOfDivisionToEdit = Integer.parseInt(req.params("id"));
+            Division editDivision = Division.findById(idOfDivisionToEdit);
+            model.put("editDivision", editDivision);
+            return new ModelAndView(model, "newdepartment-form.hbs");
+        }, new HandlebarsTemplateEngine());
 //
 //        get("/posts/:id/delete", (req, res) -> {
 //            Map<String, Object> model = new HashMap<>();
