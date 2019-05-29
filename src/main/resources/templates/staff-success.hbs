@@ -8,17 +8,16 @@
 
         {{#if division}}
             {{#each division }}
-                <p>{{division.department}}</p>
                 <div id="updated_details">
-                    <p>Name: {{ division.staff_name }},</p>
-                    <p>Department: {{ division.department }},</p>
-                    <p>Section: {{ division.section }},</p>
-                    <p>Role: {{ division.role }},</p>
-                    <p>Responsibilities: {{ division.responsibilities }},</p>
+                    <p>Name: {{ division.staff_name }}</p>
+                    <p>Department: {{ division.department }}</p>
+                    <p>Section: {{ section }}</p>
+                    <p>Role: {{ role }}</p>
+                    <p>Responsibilities: {{ responsibilities }}</p>
                 </div>
             {{/each}}
         {{else}}
-            <p>No departments added yet!</p>
+            <p>No staff added yet!</p>
         {{/if}}
 
 
